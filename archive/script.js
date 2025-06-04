@@ -50,8 +50,6 @@ function showParty() {
 
 document.getElementById("yesBtn").addEventListener("click", function () {
     document.getElementById("customPopup").style.display = "block";
-
-    window.location.href = "/form";
 });
 
 document.getElementById("closePopup").addEventListener("click", function () {
