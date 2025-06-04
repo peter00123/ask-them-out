@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p><strong style="color:#ffb6c1;">📝 Description:</strong> ${data.description || '<em>None</em>'}</p>
             </div>
             <div style="text-align:center; margin-top:18px;">
-                <span style="font-size:1em;">💕please download share the image to me💕</span>
+                <span style="font-size:1em;">download and share💕</span>
             </div>
             <br><br>
         `;

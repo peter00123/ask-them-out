@@ -55,7 +55,7 @@ document.getElementById("yesBtn").addEventListener("click", async function () {
     document.getElementById("customPopup").style.display = "block";
 
     // Wait 2 seconds
-    await sleep(2000);
+    await sleep(1000);
 
     // Redirect to form.html
     window.location.href = "form.html";
