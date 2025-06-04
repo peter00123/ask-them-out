@@ -1,0 +1,150 @@
+/* Dark Theme Romantic & Mobile-Optimized Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2d1a2e 0%, #3a2340 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', 'Dancing Script', cursive, Arial, sans-serif;
+    overflow: hidden;
+}
+.container {
+    background: rgba(40, 20, 40, 0.96);
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(220, 20, 60, 0.18);
+    padding: 40px 24px 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    max-width: 95vw;
+    width: 380px;
+    margin: 16px;
+    border: 2px solid #a14a6c;
+    position: relative;
+}
+.container::before {
+    content: "💖";
+    font-size: 2.5rem;
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 2px 8px #a14a6c);
+}
+.question {
+    font-size: 2.1rem;
+    font-family: 'Dancing Script', cursive, 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    color: #ffb6c1;
+    text-align: center;
+    margin-bottom: 18px;
+    text-shadow: 0 2px 8px #3a2340;
+    letter-spacing: 1px;
+}
+.buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.btn {
+    font-size: 1.15rem;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 32px;
+    background: #3a2340;
+    color: #ffb6c1;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 
+        background 0.2s,
+        color 0.2s,
+        transform 0.4s cubic-bezier(.4,2,.6,1),
+        box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(220, 20, 60, 0.18);
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+.btn.yes {
+    background: linear-gradient(90deg, #a14a6c 0%, #ff80ab 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px #a14a6c;
+    position: relative;
+}
+.btn.yes::after {
+    content: "💌";
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+.btn.no {
+    background: #4a2a4a;
+    color: #ffb6c1;
+}
+.btn.no:hover {
+    background: #a14a6c;
+    color: #fff;
+}
+.btn.yes:active {
+    background: #a14a6c;
+}
+.btn.no:active {
+    background: #6d2a4a;
+}
+.party-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(80, 20, 40, 0.6);
+    z-index: 1000;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.confetti {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    opacity: 0.9;
+    border-radius: 50%;
+    will-change: transform;
+    pointer-events: none;
+    background: radial-gradient(circle at 60% 40%, #a14a6c 60%, #ff80ab 100%);
+    box-shadow: 0 2px 8px #a14a6c;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 32px 4vw 28px 4vw;
+        width: 96vw;
+        min-width: unset;
+        border-radius: 20px;
+    }
+    .question {
+        font-size: 1.8rem;
+    }
+    .btn {
+        font-size: 1.15rem;
+        padding: 16px 22px;
+    }
+    .buttons {
+        gap: 16px;
+    }
+}
