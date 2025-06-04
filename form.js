@@ -40,8 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p><strong style="color:#ffb6c1;">📝 Description:</strong> ${data.description || '<em>None</em>'}</p>
             </div>
             <div style="text-align:center; margin-top:18px;">
-                <span style="font-size:2em;">💕</span>
+                <span style="font-size:1em;">💕please download share the image to me💕</span>
             </div>
+            <br><br>
         `;
 
         // Hide the element off-screen for rendering
@@ -63,9 +64,12 @@ document.addEventListener('DOMContentLoaded', function() {
             downloadBtn.style.marginTop = "16px";
             downloadBtn.style.display = "inline-block";
             downloadBtn.innerHTML = `
+
                 <svg width="36" height="36" viewBox="0 0 24 24" fill="#ffb6c1" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 16V4M12 16l-4-4m4 4l4-4M4 20h16" stroke="#ffb6c1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                 </svg>
+
+
             `;
 
             downloadBtn.onclick = function() {
