@@ -47,11 +47,18 @@ function showParty() {
         yesScale = 1;
     }, 2500);
 }
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-document.getElementById("yesBtn").addEventListener("click", function () {
+document.getElementById("yesBtn").addEventListener("click", async function () {
     document.getElementById("customPopup").style.display = "block";
 
-    window.location.href = "/form";
+    // Wait 2 seconds
+    await sleep(2000);
+
+    // Redirect to form.html
+    window.location.href = "form.html";
 });
 
 document.getElementById("closePopup").addEventListener("click", function () {
