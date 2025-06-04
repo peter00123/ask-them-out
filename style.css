@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 22px;
+    font-size: 15px;
 }
 body {
     min-height: 100vh;
@@ -141,7 +141,7 @@ body {
         border-radius: 32px;
     }
     .question {
-        font-size: 2.4rem;
+        font-size: 1.5rem;
     }
     .btn {
         font-size: 1.6rem;
